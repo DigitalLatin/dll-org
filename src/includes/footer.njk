@@ -1,7 +1,50 @@
-<footer class="container">
-  <p class="float-end"><a href="#">Back to top</a></p>
-  <p>
-    <a href="https://github.com/mandrasch/11ty-plain-bootstrap5">GitHub</a> ·
-    <a href="{{ '/pages/imprint' | url }}">Imprint</a> · <a href="{{ '/pages/privacy' | url }}">Privacy</a>
-  </p>
-</footer>
+<div id="footerwrapper">
+  <footer class="container mt-auto">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-4 pb-4">
+          <h3>Navigation</h3>
+          <ul class="list-group">
+            {%- for item in collections.all | eleventyNavigation -%}
+            <li class="list-group-item py-1">
+              <a
+                href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"
+                {%
+                if
+                isCurrent
+                %}aria-current="page"
+                {%
+                endif
+                %}
+              >
+                {{ item.title | upper }}
+              </a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Social</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Contact</h3>
+          <address>
+            Digital Latin Library<br />
+            The University of Oklahoma<br />
+            650 Parrington Oval<br />
+            CARN 116<br />
+            Norman, OK 73019<br />
+            <br />
+            <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
+          </address>
+          <p class="copyright">© Copyright {{ "" | currentYear }} Digital Latin Library</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

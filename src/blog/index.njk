@@ -1,0 +1,38 @@
+---
+meta:
+  lang: en
+  title: "Digital Latin Library Blog"
+  description: The blog of the Digital Latin Library
+permalink: /blog/index.html
+layout: base
+eleventyNavigation:
+  key: Blog
+---
+
+<div class="mb-4 rounded-3">
+  <div class="container-fluid py-2">
+    <h1 class="display-5 fw-bold">Blog Posts</h1>
+
+    <ul class="list-unstyled pt-3">
+      {%- for item in collections.blog | reverse -%} {%- if "News" not in item.data.tags and "Events" not in
+      item.data.tags -%}
+      <li class="pb-3">
+        <a href="{{ item.url | url }}">{{ item.data.title }}</a> | {{ item.data.date | readableDate }}
+      </li>
+      {% endif %} {%- endfor -%}
+    </ul>
+  </div>
+
+  <div class="container-fluid py-2">
+    <h2>Categories</h2>
+    <ul class="list-group list-group-horizontal pt-3">
+      {%- for tag in collections.tagsList | reverse -%} {%- if tag !== 'posts' -%}
+      <li class="list-group-item flex-fill text-center">
+        <a href="/tags/{{ tag }}">{{ tag }}</a>
+      </li>
+      {%- endif -%} {%- endfor -%}
+    </ul>
+  </div>
+
+  <!-- for debug: {{ site | dump }} {{page | dump }} {{meta | dump}}-->
+</div>

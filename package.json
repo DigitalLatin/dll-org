@@ -31,6 +31,7 @@
     "@11ty/eleventy-img": "^2.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@popperjs/core": "^2.11.5",
     "autoprefixer": "^10.3.1",
     "bootstrap": "~5.2.2",
@@ -44,5 +45,9 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.35.2",
     "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-redirects": "^1.0.0",
+    "markdown-it-attrs": "^4.1.6"
   }
 }
