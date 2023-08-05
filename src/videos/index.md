@@ -1,8 +1,11 @@
 ---
 layout: base
 title: Video Library
-permalink: - /videos/index.html
+permalink: /videos/index.html
 date: 2015-07-23
+eleventyNavigation:
+  key: Videos
+  order: 5
 aliases:
   - /digital-latin-library/video-library
   - /videos/baldassarri/stefano-baldassarri-introduction-philology
@@ -47,18 +50,17 @@ aliases:
   - /videos/tarrant/richard-tarrant-interpolation-4
   - /videos/tarrant/richard-tarrant-conclusion
   - /videos/crane/greg-crane-textual-criticism-past-and-present
-
 ---
 
 Since seminars on textual criticism are not common, and since the success of the DLL depends on a new generation of editors producing born-digital critical editions, we invited some established experts and up-and-coming scholars to record their thoughts on editorial techniques. These videos were produced in Norman, OK at [NextThought](https://www.nextthought.com), and they are freely available for use in classes or for private study. Many thanks to the [University of Oklahoma's Center for Teaching Excellence](http://www.ou.edu/cte.html) for their assistance with captioning.
 
 The videos feature the following scholars (with links to the playlist on the DLL's YouTube site):
 
-- Stefano Baldassarri, Program Director, ISI Florence: [Criticism of Humanist Texts](https://www.youtube.com/playlist?list=PLo8pZkfZN5h05u7YSjr87sgFcpUWmPgy6)
-- Greg Crane, Professor of Classics, Winnick Family Chair of Technology and Entrepreneurship Tufts University; Alexander von Humboldt Professor of Digital Humanities: [Textual Criticism, Past and Present](https://www.youtube.com/playlist?list=PLo8pZkfZN5h0PgFE7JM9QssnlCsxirVoh)
-- Cynthia Damon, Professor of Classical Studies, University of Pennsylvania: [Reading the Critical Apparatus](https://www.youtube.com/playlist?list=PLo8pZkfZN5h1ofSkKnyIZ59fHHwQ-MfGi)
-- Greta Franzini, Postdoctoral Researcher, Göttingen Centre for Digital Humanities: [Digital Editing and Textual Criticism](https://www.youtube.com/playlist?list=PLo8pZkfZN5h24Q1sdZSJkeT0Phx31KKF7)
-- Robert Kaster, Kennedy Foundation Professor of Latin Language and Literature, Princeton University: [Constructing the Critical Apparatus](https://www.youtube.com/playlist?list=PLo8pZkfZN5h1GRok-q_QBy_Gh3Og0Afot)
-- James C. McKeown, Professor of Classics, University of Wisconsin: [Textual Criticism](https://www.youtube.com/playlist?list=PLo8pZkfZN5h3fPg7bI9CGVrMKEgsSbTY1)
-- Robert H. Rodgers, Lyman-Roberts Professor of Classics, University of Vermont: [Introduction to Critical Editing](https://www.youtube.com/playlist?list=PLo8pZkfZN5h3gsM0EyiDp4FLPB8833yTW)
-- Richard Tarrant, Pope Professor of the Latin Language and Literature, Harvard University: [Interpolation](https://www.youtube.com/playlist?list=PLo8pZkfZN5h2hIKi2DRPUFRNzbeyqRCbl)
+- **Stefano Baldassarri**, Program Director, ISI Florence: [Criticism of Humanist Texts](https://www.youtube.com/playlist?list=PLo8pZkfZN5h05u7YSjr87sgFcpUWmPgy6)
+- **Greg Crane**, Professor of Classics, Winnick Family Chair of Technology and Entrepreneurship Tufts University; Alexander von Humboldt Professor of Digital Humanities: [Textual Criticism, Past and Present](https://www.youtube.com/playlist?list=PLo8pZkfZN5h0PgFE7JM9QssnlCsxirVoh)
+- **Cynthia Damon**, Professor of Classical Studies, University of Pennsylvania: [Reading the Critical Apparatus](https://www.youtube.com/playlist?list=PLo8pZkfZN5h1ofSkKnyIZ59fHHwQ-MfGi)
+- **Greta Franzini**, Postdoctoral Researcher, Göttingen Centre for Digital Humanities: [Digital Editing and Textual Criticism](https://www.youtube.com/playlist?list=PLo8pZkfZN5h24Q1sdZSJkeT0Phx31KKF7)
+- **Robert Kaster**, Kennedy Foundation Professor of Latin Language and Literature, Princeton University: [Constructing the Critical Apparatus](https://www.youtube.com/playlist?list=PLo8pZkfZN5h1GRok-q_QBy_Gh3Og0Afot)
+- **James C. McKeown**, Professor of Classics, University of Wisconsin: [Textual Criticism](https://www.youtube.com/playlist?list=PLo8pZkfZN5h3fPg7bI9CGVrMKEgsSbTY1)
+- **Robert H. Rodgers**, Lyman-Roberts Professor of Classics, University of Vermont: [Introduction to Critical Editing](https://www.youtube.com/playlist?list=PLo8pZkfZN5h3gsM0EyiDp4FLPB8833yTW)
+- **Richard Tarrant**, Pope Professor of the Latin Language and Literature, Harvard University: [Interpolation](https://www.youtube.com/playlist?list=PLo8pZkfZN5h2hIKi2DRPUFRNzbeyqRCbl)

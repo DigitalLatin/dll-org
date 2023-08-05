@@ -5,6 +5,7 @@ author: Samuel Huskey
 permalink: /blog/meeting-tesserae.html
 date: 2015-06-08
 tags: Events
+aliases:
   - /blog/meeting-tesserae
 ---
 

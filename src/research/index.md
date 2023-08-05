@@ -7,6 +7,7 @@ image: /assets/images/research.png
 layout: base
 eleventyNavigation:
   key: Research
+  order: 4
 ---
 
 The Digital Latin Library project provides a platform for publishing research and scholarship in the form of born-digital critical editions of Latin texts. But the DLL is a research project in its own right, with efforts in the fields of [Information Visualization](data-visualization.html), [Library and Information Science](https://catalog.digitallatin.org/info/about-catalog), and [Digital Philology](digital-philology.html).
@@ -38,7 +39,6 @@ Here is a listing of the DLL's research outcomes so far:
 1. Huskey, S. J. 2022. "The Visual [Re]Presentation of Textual Data in Traditional and Digital Critical Editions." _magazén: International Journal for Digital and Public Humanities_ 3.1. <https://edizionicafoscari.unive.it/it/edizioni4/riviste/magazen/2022/1/the-visual-representation-of-textual-data-in-tradi/>
 2. Huskey, S. J. and Cayless, H. 2022. "The Digital Critical Apparatus: Thoughts from the Field." _The Classical Journal_ 117.3: 340–358.
 3. Huskey, S. J., and Witt, J. 2019. "Decoupling Quality Control and Publication: The Digital Latin Library and the Traveling Imprimatur." _Digital Humanities Quarterly_ 13.4. <http://digitalhumanities.org/dhq/vol/13/4/000438/000438.html>
-4. Huskey, S. J. 2011. "Fragments of an Anonymous Medieval Commentary in a Manuscript of Lucan's _De bello civili_." _Mittellateinisches Jahrbuch_ 46: 91–110.
 
 ## Chapters in Books
 

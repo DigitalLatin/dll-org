@@ -7,6 +7,7 @@ layout: base
 image: /assets/images/about_3.jpg
 eleventyNavigation:
   key: About
+  order: 2
 aliases:
   - /about-project
   - /digital-latin-library

@@ -5,7 +5,8 @@ author: Samuel Huskey
 permalink: /blog/summer-workshop.html
 date: 2017-01-21
 tags: Events
-aliases: /blog/summer-workshop
+aliases:
+  - /blog/summer-workshop
 ---
 
 The Digital Latin Library project announces a workshop on the preparation of critical editions of Latin texts according to the soon-to-be-released encoding guidelines for the Library of Digital Latin Texts (LDLT), a series of new, born-digital editions to be published under the auspices of the Society for Classical Studies, the Medieval Academy of America, and the Renaissance Society of America. The workshop will be held on the campus of the University of Oklahoma, the DLL’s institutional home, on June 29–30, 2017.
