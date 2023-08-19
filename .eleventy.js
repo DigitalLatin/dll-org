@@ -100,6 +100,9 @@ module.exports = function (eleventyConfig) {
     template: "clientSide",
   });
 
+  // Copy the CNAME file to output (_site)
+  eleventyConfig.addPassthroughCopy("src/CNAME");
+
   // Copy dist/ files from laravel mix
   eleventyConfig.addPassthroughCopy("dist/"); // path is relative from root
 
