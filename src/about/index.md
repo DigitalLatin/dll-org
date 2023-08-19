@@ -24,11 +24,3 @@ With the support of a planning grant from the [Andrew W. Mellon Foundation\'s Sc
 In 2014, Huskey teamed up with colleagues June Abbas, a professor in OU\'s [School of Library and Information Studies](https://www.ou.edu/cas/slis), and [Chris Weaver](https://www.ou.edu/coe/cs/people/weaver), an associate professor in OU\'s [School of Computer Science](https://www.ou.edu/coe/cs/), and applied for and received a second planning grant from the Mellon Foundation—this time to explore the possibilities for incorporating data visualization and analysis into the project and to conduct user studies according to the standards of library science. The success of that planning phase led to the award of a two-year implementation grant for 2015-2017, which was extended to 2018.
 
 Read more about the project\'s [mission](/about/mission-and-goals.html) and [history](/about/project-history.html). [See a list of the research outcomes of this period of the DLL's history](/research/index.html).
-
-## Current Focus
-
-Since the conclusion of the implementation period, the focus of the DLL has been the [_Library of Digital Latin Texts_](https://ldlt.digitallatin.org/), our Open Access publishing endeavor that seeks to create and publish new born-digital, critical editions of Latin texts.
-
-This aspect of the project was selected as the focus of the project's efforts because it is the area of research and creative activity that can have the greatest impact. Many other projects exist for the purpose of providing access to Latin texts, and those texts can be found quite easily using a standard search engine. For those reasons, development on the [DLL catalog](https://catalog.digitallatin.org/) has been paused for the time being.
-
-Instead, we are committed to maintaining and developing a platform for creating, publishing, visualizing, and openly sharing critical editions of Latin texts. That is why we have directed all of our time and effort toward advancing that goal.
