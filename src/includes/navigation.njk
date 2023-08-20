@@ -1,7 +1,7 @@
 {# Macro function to render child items (submenus) #}
 {% macro renderNavListDropdown(childEntry) -%}
 <li>
-    <a class="dropdown-item" href=" {{ childEntry.url | url }}">
+    <a class="dropdown-item" href=" {{ childEntry.url }}">
     {{childEntry.title}}
     </a>
 </li>
@@ -21,21 +21,21 @@
             {%- if hasChildren == false -%}
             {# Standard menu nav link #}
             <a class="nav-link{% if isCurrent or isParent %} active{% endif %}"
-                href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"
+                href="{% if isCurrent %}#main{% else %}{{ item.url }}{% endif %}"
                 {% if isCurrent %}aria-current="page" {% endif %}>
                 {{ item.title }}
             </a>
             {%- else -%}
             {# Menu nav link for bootstrap dropdowns, change role to button #}
             <a class="nav-link{% if isCurrent or isParent %} active{% endif %} {% if hasChildren %}dropdown-toggle{% endif %}"
-                href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"
+                href="{% if isCurrent %}#main{% else %}{{ item.url }}{% endif %}"
                 {% if isCurrent %}aria-current="page" {% endif %} {% if hasChildren %} role="button" data-bs-toggle="dropdown" aria-expanded="false"{% endif %}
                 id="{{randomMenuId}}">
                 {{ item.title }} {% if hasChildren %}<span class="visually-hidden">Toggle Dropdown {{item.title}}</span>{% endif %}
             </a>
             <ul class="dropdown-menu" aria-labelledby="{{randomMenuId}}">
                 <li>
-                    <a class="dropdown-item" href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"><!-- {{ item.title }}-->Overview</a>
+                    <a class="dropdown-item" href="{% if isCurrent %}#main{% else %}{{ item.url }}{% endif %}"><!-- {{ item.title }}-->Overview</a>
                 </li>
                 {%- for child in item.children %}{{ renderNavListDropdown(child) }}{% endfor -%}
             </ul>
