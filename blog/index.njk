@@ -18,7 +18,7 @@ eleventyNavigation:
       {%- for item in collections.blog | reverse -%} {%- if "News" not in item.data.tags and "Events" not in
       item.data.tags -%}
       <li class="pb-3">
-        <a href="{{ item.url | url }}">{{ item.data.title }}</a> | {{ item.data.date | readableDate }}
+        <a href="{{ item.url }}">{{ item.data.title }}</a> | {{ item.data.date | readableDate }}
       </li>
       {% endif %} {%- endfor -%}
     </ul>
