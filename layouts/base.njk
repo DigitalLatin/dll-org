@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang or site.lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }} - {{ title or meta.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+
+    {% include "meta.njk" %}
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 homepage">
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+
+    {% include "header.njk" %}
+    <div class="background-image"></div>
+    <div class="flex-grow-1">
+      <main id="main">
+        <div class="container my-2 py-4 bg-white" id="content">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <h1>{{ title }}</h1>
+              {% if image %}
+              <img src="{{ image }}" class="featured-image-post" />
+              {% endif %}
+              {{ content | safe }}
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    {% include "footer.njk" %}
+    <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
+  </body>
+</html>

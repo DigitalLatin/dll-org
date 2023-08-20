@@ -1,0 +1,122 @@
+---
+meta:
+  lang: en
+  title: Digital Latin Library
+  description: The main site for the Digital Latin Library
+permalink: /index.html
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+<!DOCTYPE html>
+<html lang="{{ meta.lang or site.lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }} - {{ title or meta.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+
+    {% include "meta.njk" %}
+  </head>
+
+  <body class="homepage">
+    
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+
+    {% include "header.njk" %}
+    <div class="background-image"></div>
+      <main id="main">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-12 mx-auto">            
+              <div class="p-5 mb-4 bg-light rounded-3" id="mission">
+                <div class="container-fluid py-2">
+                  <h1 class="display-6">Our Mission</h1>
+
+                  <p class="col-md-10 mb-0 pt-2">
+                    <ol>
+                    <li>
+                      To publish and curate critical editions of Latin texts, of all types, from all eras
+                    </li>
+                    <li>
+                      To facilitating the finding and, where openly available and accessible online, the reading of all texts written in Latin
+                    </li>
+                    </ol>
+                  </p>
+                  <p>
+                    We use the word &ldquo;library&rdquo; to describe our project because that word&rsquo;s many meanings apply to what we're building:
+                    <ul>
+                      <li>
+                      <a href="https://ldlt.digitallatin.org/">a
+                        series of volumes published</a> according to <a href="https://digitallatin.github.io/guidelines/LDLT-Guidelines.html">a uniform standard</a>
+                    </li>
+                    <li><a href="https://github.com/DigitalLatin">resources for reading and working with texts</a></li>
+                      <li>
+                        and <a href="https://catalog.digitallatin.org/">a catalog of texts and resources</a></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6 mt-3">
+              <div class="h-100 p-5 text-white bg-primary rounded-3 transparent-box">
+                <h2 class="front-header">About</h2>
+                <p>The DLL is a joint project of the <a href="https://classicalstudies.org/" class="link-light">Society for Classical Studies</a>, the <a href="https://www.medievalacademy.org/" class="link-light">Medieval Academy of America</a>, and the <a href="https://www.rsa.org/" class="link-light">Renaissance Society of America</a>. The <a href="https://mellon.org/" class="link-light">Mellon Foundation</a> funded the early stages of the project, and the <a href="https://www.ou.edu/" class="link-light">University of Oklahoma</a> hosts it.</p>
+                <a href="{{ 'about/index.html' | url }}" class="btn btn-outline-light float-end">About the DLL</a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="h-100 p-5 border rounded-3 text-white bg-secondary transparent-box">
+                <h2 class="front-header">Research</h2>
+                  <p>
+                    With nearly $2 million in grant funding to date and numerous publications and digital products, the DLL regularly generates contributions to interdisciplinary research, scholarship, and creative activity in such fields as Digital Humanities, Information Visualization, and Textual Criticism.
+                  </p>
+                  <a href="{{ 'research/index.html ' | url }}" class="btn btn-outline-light float-end">See our research outputs</a>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6 mt-3">
+              <div class="h-100 p-5 border rounded-3 text-white transparent-box" style="background-color: #5cb900">
+                <h2 class="front-header">Blog</h2>
+                  <ul class="list-unstyled">
+                    {%- set count = 0 -%} {%- for item in collections.blog | reverse -%} {%- if item.fileSlug != 'index' -%} {%- if "News" not in item.data.tags and "Events" not in
+      item.data.tags -%} {%- if count < 5 -%} {%- set count = count
+                    + 1 -%}
+                    <li class="pb-2">
+                      <a href="{{ item.url | url }}" class="link-light">{{ item.data.title }}</a>
+                    </li>
+                    {%- endif -%} {%- endif -%} {%- endif -%} {%- endfor -%}
+                  </ul>
+                  <a href="{{ 'blog ' | url }}" class="btn btn-outline-light float-end">More …</a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="h-100 p-5 rounded-3 text-white transparent-box" style="background-color: #b9005c;">
+                <h2 class="front-header">Video Library</h2>
+                  <p>
+                    Since seminars on textual criticism are not common, and since the success of the DLL depends on a new generation of editors producing born-digital critical editions, we invited some established experts and up-and-coming scholars to record their thoughts on editorial techniques. hese videos were produced in Norman, OK at [NextThought](https://www.nextthought.com), and they are freely available for use in classes or for private study.
+                  </p>
+                  <a href="{{ 'videos/index.html' | url }}" class="btn btn-outline-light float-end">Go to the videos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12">
+              <div class="img-fit-cover-container rounded-3 bg-light"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+        {% include "footer.njk" %}
+    <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
+  </body>
+</html>
+
+<!-- for debug: {{ site | dump }} {{page | dump }} {{meta | dump}}-->

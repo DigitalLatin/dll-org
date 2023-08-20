@@ -1,0 +1,202 @@
+/* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* for bootstrap-icons (svg) */
+.bi {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #b95d00;
+}
+
+h2.front-header {
+  color: #ffffff;
+}
+
+#byline {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: smaller;
+}
+
+// Custom toggler
+.custom-toggler .navbar-toggler-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .custom-toggler .navbar-toggler-icon {
+    font-size: 1.2rem;
+  }
+}
+
+.logo-toggle-spacing {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .logo-toggle-spacing {
+    margin-bottom: 0;
+  }
+}
+
+#content {
+  opacity: 0.95;
+}
+#mission {
+  opacity: 0.9;
+}
+
+.transparent-box {
+  opacity: 0.9;
+}
+
+.img-fit-cover-container {
+  &.rounded-3 {
+    picture img {
+      border-radius: 0.3rem !important;
+    }
+  }
+  picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  picture img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+}
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+
+code {
+  color: #b9005c;
+}
+
+.featured-image-post {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border: thin black solid;
+}
+
+.float-image-right {
+  float: right;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+  border: thin solid black;
+}
+
+.float-image-left {
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  border: thin solid black;
+}
+
+.image {
+  border: solid thin black;
+}
+
+.center-image {
+  display: block;
+  margin: 2rem auto;
+}
+
+body.homepage {
+  position: relative;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+#footerwrapper {
+  background-color: slategrey;
+  color: white;
+}
+
+#footerwrapper ul.list-group li {
+  background-color: slategrey;
+  border: none;
+}
+
+#footerwrapper a {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+}
+
+#footerwrapper a:hover {
+  color: #b95d00;
+  text-decoration: none;
+  font-size: small;
+}
+
+#footerwrapper h3 {
+  color: white;
+  font-variant: small-caps;
+  font-size: 1rem;
+}
+
+// Social Media Icons
+
+#footerwrapper a.fa {
+  font-size: 2rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+address {
+  font-size: small;
+}
+.copyright {
+  font-size: small;
+  text-align: left;
+}

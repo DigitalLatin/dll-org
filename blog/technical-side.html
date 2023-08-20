@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Latin Library - The Technical Side</title>
+
+    <link rel="stylesheet" href="/dll-org/dist/app.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+
+    
+
+
+<meta name="description" content="The main site for the Digital Latin Library">
+
+
+<meta property="og:site_name" content="Digital Latin Library">
+<meta property="og:title" content="Digital Latin Library">
+<meta property="og:description" content="The main site for the Digital Latin Library">
+<meta property="og:url" content="https://digitallatin.github.io/dll-org/blog/technical-side.html">
+<meta property="og:locale" content="">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Technical Side">
+<meta name="twitter:description" content="The main site for the Digital Latin Library">
+
+
+
+
+<link rel="icon" href="/dll-org/assets/favicons/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 homepage">
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+
+    <div class="bg-primary" id="nav-wrapper">
+  <div class="container">
+    <header class="pb-1 mb-2">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="/dll-org/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img
+              src="/assets/images/DLL_logo_web_medium_horizontal_ko.png"
+              alt="Digital Latin Library Logo"
+              width="375"
+              height="75"
+              class="img-fluid logo-toggle-spacing"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse pt-3" id="navbarNav">
+
+
+
+
+
+<ul class="navbar-nav ms-auto"><li class="nav-item">
+            <a class="nav-link"
+                href="/dll-org/"
+                >
+                Home
+            </a></li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+                href="/dll-org/about/"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="dropdown-927838">
+                About <span class="visually-hidden">Toggle Dropdown About</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-927838">
+                <li>
+                    <a class="dropdown-item" href="/dll-org/about/"><!-- About-->Overview</a>
+                </li><li>
+    <a class="dropdown-item" href=" /dll-org/about/mission-and-goals.html">
+    Mission and Goals
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/about/people.html">
+    People
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/about/project-history.html">
+    Project History
+    </a>
+</li></ul></li><li class="nav-item">
+            <a class="nav-link active"
+                href="/dll-org/blog/"
+                >
+                Blog
+            </a></li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+                href="/dll-org/research/"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="dropdown-720708">
+                Research <span class="visually-hidden">Toggle Dropdown Research</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-720708">
+                <li>
+                    <a class="dropdown-item" href="/dll-org/research/"><!-- Research-->Overview</a>
+                </li><li>
+    <a class="dropdown-item" href=" /dll-org/research/catalog.html">
+    Catalog
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/data-visualization.html">
+    Visualization
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/digital-philology.html">
+    Philology
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/library-of-digital-latin-texts.html">
+    LDLT
+    </a>
+</li></ul></li><li class="nav-item">
+            <a class="nav-link"
+                href="/dll-org/videos/"
+                >
+                Videos
+            </a></li></ul>
+
+
+</div>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>
+
+    <div class="background-image"></div>
+    <div class="flex-grow-1">
+      <main id="main">
+        <div class="container my-2 py-4 bg-white" id="content">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <h1>The Technical Side</h1>
+              <p class="border-top border-dark" id="byline">
+                <em>By Samuel J. Huskey | August 19, 2023</em>
+              </p>
+              
+              <img src="/assets/images/sam-albury-oA7MMRxTVzo-unsplash.jpg" class="featured-image-post" />
+              
+              <p>Visitors to this site over the past several months may have had the impression that the DLL was dormant, since the last post appeared over a year ago. The truth is that we've been very busy evaluating our choices about the technology we use for the different parts of this project, not to mention <a href="/research/index.html">publishing and presenting our work</a>.</p>
+<p>This post is about what we have done and what we are doing to update and upgrade the DLL's technical components. This is off the topic of Latin texts, I know, but it's important to keep the technical work of Digital Humanities research, scholarship, and creative activity in view to demonstrate to our peers in other fields what goes on behind the scenes.</p>
+<h2>Background</h2>
+<p>When the DLL project was launched <a href="https://www.mellon.org/grant-details/digital-latin-library-9512">over a decade ago</a>, dynamic content management systems were as popular as they were plentiful. Since I had experience with <a href="https://drupal.org/">Drupal</a> 6 and 7, it seemed reasonable to use it for the DLL's main, informational site. Because Drupal is also in wide use at libraries around the world, it was a good choice for the DLL's catalog site, too. We decided to use <a href="https://www.django-cms.org/en/">Django</a> for the <em>Library of Digital Latin Texts</em> because we needed more control over the front end than Drupal would give us.</p>
+<p>Having worked with Drupal previously, I designed and built content types, taxonomies, and views for the main site and catalog, but we used grant funding to hire a firm to design the user interface.</p>
+<p>The same grant funding also allowed us to hire an independent consultant to set up and maintain the virtual server that OU's Office of the Vice President for Research generously made available to us free of charge for the life of the project. Since the consultant was available only during the grant period, I took the opportunity to learn how to maintain the server so that it would not be neglected after the funding ended.</p>
+<h2>EOL</h2>
+<p>Everything was working well until various components of the DLL's technology stack began reaching their end of life (EOL) dates. Both the main site and the catalog were running on Drupal 7, which had been released in 2011. Development on Drupal 8 began in 2015; since it was being built on an entirely new framework, the upgrade process would be particularly challenging. I kept my eye on that project while staying current with updates and patches for Drupal 7.</p>
+<p>Of course, with a new framework come new technical requirements for supporting it. The operating system, database management system, and PHP version running on the server that OU was hosting for us could not be upgraded to the specifications listed for the new version of Drupal. There had been several changes in the administration at OU, including a new Vice President for Research and Partnerships and a new Chief Information Officer at OU. With so many changes, it was only natural that there would also be a new way of hosting digital research projects. Fortunately, we were able to negotiate a great deal with the <a href="https://www.ou.edu/oscer">OU Supercomputing Center for Education &amp; Research</a> (OSCER) to host a new virtual server in OU's Research Cloud. Part of that deal was that I would continue being the system administrator for the DLL.</p>
+<h2>New Server, New Directions</h2>
+<p>After I set up the new server and transferred everything to it, it was time to start working on migrating the Drupal sites to the new version. By then, Drupal 9 had been released, so our sites were at this point <em>two</em> versions behind. Fortunately, migrating the data was not too difficult. The bigger problem was that the templating engine (<a href="https://twig.symfony.com/">Twig</a>) for Drupal 8 and 9 was entirely new, and that meant that the interface had to be rebuilt entirely from scratch. I didn't have another $45,000 lying around to pay designers to do the work, so I had to dust off my design skills, which have never been more than serviceable.</p>
+<p>But before donning the cap of Front-end Developer, I decided to step back and reassess the technical requirements of the DLL project as a whole. Trying to keep pace with developments in Linux, Drupal, Django, and other technologies was taking time away from the philological mission of the DLL. The time had come to make some decisions about the efficiency, stability, and sustainability of our technology stack.</p>
+<h2>KISS (Keep It Static, Silly!)</h2>
+<p>The main site for the DLL (<a href="https://digitallatin.org/">https://digitallatin.org/</a>) is pretty simple: a few informational pages and a blog. Since most of that content does not change, a static site generator would be preferable to a dynamic content management system like Drupal, which has a complex ecosystem of technologies that require special knowledge and skills to maintain.</p>
+<p>I selected 11ty (<a href="https://www.11ty.dev/">Eleventy</a>) for the DLL's main site because it has excellent documentation and a large user community. It's also simple to work on the site locally (i.e., on my laptop). I can write all of the content in Markdown, my preferred format for writing almost everything these days. The Git workflow for tracking changes and pushing the site to the host repository mirrors the workflow in use in other parts of the DLL project. What's more, the site can now be hosted directly from its repository on <a href="https://github.com/">GitHub</a>, which means there's less to maintain on our server. Best of all, 11ty has some good starter templates for designing the front end. The one I selected for <a href="https://digitallatin.org/">https://digitallatin.org/</a> is <a href="https://mandrasch.github.io/11ty-plain-bootstrap5/">based on Bootstrap 5</a>, a framework I was already familiar with from my work building the theme for the <a href="https://classicalstudies.org/">Society for Classical Studies</a>' site. That makes responsive design much easier.</p>
+<p>Still, transferring the existing content from Drupal 7 to 11ty did require some effort. If you're interested, you can read more about the process on my personal blog at <a href="https://sjhuskey.info/posts/drupal-to-11ty/">https://sjhuskey.info/posts/drupal-to-11ty/</a>.</p>
+<p>Hugh Cayless and I used similar reasoning in making the decision to move the <em>Library of Digital Latin Texts'</em> site from Django to <a href="https://jekyllrb.com/">Jekyll</a>, another static site generator. Since the content of <a href="https://ldlt.digitallatin.org/">https://ldlt.digitallatin.org/</a> does not change frequently, it didn't make sense to use a full-blown CMS for it, so we (Hugh, mostly) rebuilt the functionality for converting the TEI XML files for LDLT editions into HTML files. Now <a href="https://ldlt.digitallatin.org/">https://ldlt.digitallatin.org/</a> is also hosted from a remote Git repository on Github.</p>
+<p>If you're wondering why we didn't use the same static site generator for both sites, we're evaluating which one serves our needs more effectively, 11ty or Jekyll. We'll eventually make the switch to using one or the other for both sites.</p>
+<h2>The Catalog</h2>
+<p>Having found simpler solutions for the DLL's main site and the LDLT's site, I can now focus on updating the <a href="https://catalog.digitallatin.org/">DLL Catalog's site</a>. All of the data have been migrated to the format required by Drupal 9, and upgrading our version of <a href="https://solr.apache.org/">Solr</a> will not be a major ordeal. The problem is, again, the front end. With enough time, I can recreate the look of the current site, perhaps even with some improvements. At that point, we can restart development of the content of the catalog, with the goal of improving its usefulness for Latin scholars. Above all, I'm looking forward to taking advantage of the improved Linked Open Data functionality of Drupal 9, including an API for publishing the site's data via <a href="https://www.drupal.org/project/graphql">GraphQL</a>.</p>
+<p>But, as I said, all of that depends on rebuilding the front end, which will have to wait for either new funding, so that I can pay an interface designer, or a break in my other projects, so that I can rebuild the theme from scratch.</p>
+<h2>The Moral</h2>
+<p>The moral of these posts is that Digital Humanities research and scholarship requires a lot more than just domain-specific knowledge. I continue to teach and do research in my original scholarly area of expertise (Greek and Latin Literature), but through my involvement with the DLL I have also had to become a <a href="https://www.w3schools.com/whatis/whatis_fullstack.asp">full-stack developer</a>, responsible for maintaining a Linux server, trouble-shooting and developing back-end functionality (MySQL, Solr, PHP), designing and implementing front-end interfaces (JavaScript, CSS, Bootstrap), and staying current with technology in general. I don't regret any of that, but I do think it's important to document the level of effort, training, and special knowledge and skills required to keep DH projects from dying on the vine just because a component has reached its end of life.</p>
+<p>In short, it is one thing to leverage grant funding and institutional resources to build a new digital resource; it is quite another to keep that resource up to date and in good working order. We need reliable and fair ways of recognizing and evaluating the contributions that maintenance, upkeep, and ongoing technical development make to research, scholarship, and creative activity in the Digital Humanities.</p>
+<hr>
+<p><small>Photo by <a href="https://unsplash.com/@sammisamuel21?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sam Albury</a> on <a href="https://unsplash.com/photos/oA7MMRxTVzo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>.</small></p>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="footerwrapper">
+  <footer class="container mt-auto">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-4 pb-4">
+          <h3>Navigation</h3>
+          <ul class="list-group"><li class="list-group-item py-1">
+              <a
+                href="/dll-org/"
+                
+              >
+                HOME
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/about/"
+                
+              >
+                ABOUT
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/blog/"
+                
+              >
+                BLOG
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/research/"
+                
+              >
+                RESEARCH
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/videos/"
+                
+              >
+                VIDEOS
+              </a>
+            </li></ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Social</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Contact</h3>
+          <address>
+            Digital Latin Library<br />
+            The University of Oklahoma<br />
+            650 Parrington Oval<br />
+            CARN 116<br />
+            Norman, OK 73019<br />
+            <br />
+            <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
+          </address>
+          <p class="copyright">© Copyright 2023 Digital Latin Library</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script type="text/javascript" src="/dll-org/dist/app.js"></script>
+  </body>
+</html>

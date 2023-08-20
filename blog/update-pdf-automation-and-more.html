@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Latin Library - Update: PDF, Automation, and More</title>
+
+    <link rel="stylesheet" href="/dll-org/dist/app.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+
+    
+
+
+<meta name="description" content="The main site for the Digital Latin Library">
+
+
+<meta property="og:site_name" content="Digital Latin Library">
+<meta property="og:title" content="Digital Latin Library">
+<meta property="og:description" content="The main site for the Digital Latin Library">
+<meta property="og:url" content="https://digitallatin.github.io/dll-org/blog/update-pdf-automation-and-more.html">
+<meta property="og:locale" content="">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Update: PDF, Automation, and More">
+<meta name="twitter:description" content="The main site for the Digital Latin Library">
+
+
+
+
+<link rel="icon" href="/dll-org/assets/favicons/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 homepage">
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+
+    <div class="bg-primary" id="nav-wrapper">
+  <div class="container">
+    <header class="pb-1 mb-2">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="/dll-org/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img
+              src="/assets/images/DLL_logo_web_medium_horizontal_ko.png"
+              alt="Digital Latin Library Logo"
+              width="375"
+              height="75"
+              class="img-fluid logo-toggle-spacing"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse pt-3" id="navbarNav">
+
+
+
+
+
+<ul class="navbar-nav ms-auto"><li class="nav-item">
+            <a class="nav-link"
+                href="/dll-org/"
+                >
+                Home
+            </a></li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+                href="/dll-org/about/"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="dropdown-302494">
+                About <span class="visually-hidden">Toggle Dropdown About</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-302494">
+                <li>
+                    <a class="dropdown-item" href="/dll-org/about/"><!-- About-->Overview</a>
+                </li><li>
+    <a class="dropdown-item" href=" /dll-org/about/mission-and-goals.html">
+    Mission and Goals
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/about/people.html">
+    People
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/about/project-history.html">
+    Project History
+    </a>
+</li></ul></li><li class="nav-item">
+            <a class="nav-link active"
+                href="/dll-org/blog/"
+                >
+                Blog
+            </a></li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+                href="/dll-org/research/"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="dropdown-807275">
+                Research <span class="visually-hidden">Toggle Dropdown Research</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-807275">
+                <li>
+                    <a class="dropdown-item" href="/dll-org/research/"><!-- Research-->Overview</a>
+                </li><li>
+    <a class="dropdown-item" href=" /dll-org/research/catalog.html">
+    Catalog
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/data-visualization.html">
+    Visualization
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/digital-philology.html">
+    Philology
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/library-of-digital-latin-texts.html">
+    LDLT
+    </a>
+</li></ul></li><li class="nav-item">
+            <a class="nav-link"
+                href="/dll-org/videos/"
+                >
+                Videos
+            </a></li></ul>
+
+
+</div>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>
+
+    <div class="background-image"></div>
+    <div class="flex-grow-1">
+      <main id="main">
+        <div class="container my-2 py-4 bg-white" id="content">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <h1>Update: PDF, Automation, and More</h1>
+              <p class="border-top border-dark" id="byline">
+                <em>By Samuel Huskey | October 5, 2020</em>
+              </p>
+              
+              <img src="/assets/images/bellum-alexandrinum-shot.png" class="featured-image-post" />
+              
+              <p>I apologize for the long delay since my last update on the Digital Latin Library Project. Every time I think I have a moment to spare to write an update, I think, &quot;No, I should really spend that time working on [insert DLL project here].&quot; But if I never write an update, no one will know that the project is still going strong. So, here's a brief update on what we have been up to.</p>
+<p>With guidance from Hugh Cayless, Jeff Witt, and Andrew Dunning, I have spent much of the past several months working on the <a href="https://github.com/DigitalLatin/DLL-Stylesheets">DLL Stylesheets</a>, with special attention to transforming LDLT edition data into a printable PDF. Latinists are used to reading critical editions in the format that has evolved over the centuries: a text with line numbers, an apparatus criticus, and all of the symbols and abbreviations that signify various things about the text. For that reason, it makes sense to make texts published by the LDLT in that format, in addition to the <a href="https://ldlt.digitallatin.org/">online viewer application</a> that Hugh Cayless developed.</p>
+<p><em>In nuce</em> , the DLL Stylesheets use <a href="https://en.wikipedia.org/wiki/XSLT">Extensible Stylesheet Language Transformations</a> (XSLT) to turn the XML-encoded data of an LDLT edition into <a href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a>, a language developed for typesetting. LaTeX has a robust module (<a href="https://www.ctan.org/pkg/reledmac">reledmac</a>) for typesetting critical editions. It automatically does the calculations for the layout of text, apparatus criticus, notes, and a variety of other features of critical editions. If you're interested in learning more about LaTeX and reledmac, I encourage you to read Andrew Dunning's, &quot;<a href="https://ride.i-d-e.de/issues/issue-11/reledmac/">Review of 'Reledmac. Typesetting technology-independent critical editions with LaTeX'</a>&quot; ( <em>RIDE</em> 11 [2020]. doi: 10.18716/ride.a.11.1. Accessed: 05.10.2020).</p>
+<p>Reledmac and LaTeX are wonderful, but the trick is getting the data into the LaTeX format in the first place—that is why DLL Stylesheets project consumed the better part of this year. I'm happy to say that the work is almost complete. I've been using three editions as test projects: Cynthia Damon's <em>Bellum Alexandrinum</em> , Andrew Dunning's <em>Miracula sancte Frideswide</em> , and Roberto Pesce's edition of <em>Tractatus de diis gentium et fabulis poetarum</em>.</p>
+<p>Here's a screenshot of the first page of Damon's edition, just to give you an exmaple of where we stand:</p>
+<p><img src="/assets/images/bellum-alexandrinum-shot.png" alt="Bellum Alexandrinum"></p>
+<p>Of course, any errors that you might spot are mine, not Professor Damon's, and this is only a draft. The edition is set to be published in the coming months.</p>
+<p>I have also been working on <a href="https://github.com/DigitalLatin/automation">automating the encoding process</a>, to take some of the tedium out of encoding texts in XML. My student Virgina K. Felkner (now pursung a Ph.D. in Computer Science at USC) was instrumental in developing my proof of concept into a working application. We have worked out a process that will encode approximately 90% of an edition's text and apparatus criticus. The remaining amount usually takes the expertise of a human editor—and that's a good thing. The point of these scripts is to reduce the mechanical, tedious aspects of encoding so that editors can focus on the work of encoding as scholarship.</p>
+<p>The scripts for prose and poetry texts are working well. Our <em>magnum opus</em> , however, is the script to encode Charles Murgia and Robert Kaster's edition of <em>Serviani Vergili Aeneidos Libros IX–XII Commentarii</em>. That text is taking some time just to prepare for the scripts, so publication of that edition may be delayed for a while, but you can soon read about the process in the forthcoming <em>Cambridge Critical Guide to Latin Literature</em> , where Bob Kaster and I wrote about traditional and digital approaches to editing texts.</p>
+<p>The DLL has finalized its publication agreements with the <a href="https://classicalstudies.org/publications-and-research/ldlt-scs-guidelines">Society for Classical Studies</a> and the <a href="https://www.medievalacademy.org/page/LDLTSubmissions">Medieval Academy of America</a>. We are close to finalizing an agreement with the Renaissance Society of America to publish editions of Neo-Latin texts.</p>
+<p>In fact, we have already published two editions on behalf of the MAA: Jeff Witt and John Slotemaker's edition of first question in book one of Peter Gracilis' commentary on the <em>Sentences</em> ; and Michael Stenskjær Christensen's edition of William of Hedon's <em>Tractatus de anima distinctio</em> 3, chapter 6. These editions were published through our collaboration with <a href="https://lombardpress.org/">LombardPress</a>. Go to <a href="https://github.com/Library-of-Digital-Latin-Texts">our repository for editions</a> to see the codebases for these editions. Look for the publication of the other editions mentioned above soon.</p>
+<p>You can also read about our &quot;Travelling Imprimatur,&quot; the method we've developed for assuring readers that they are using the officially published version of an LDLT text, in the article I cowrote with Jeff Witt: “<a href="http://digitalhumanities.org/dhq/vol/13/4/000438/000438.html">Decoupling Quality Control and Publication: The Digital Latin Library and the Traveling Imprimatur</a>” ( <em>Digital Humanities Quarterly</em> 13.4).</p>
+<p>Finally, my students Rachel Rucker (now pursuing a Ph.D. in Classics at the University of Iowa) and Alex Konieczny (now pursuing a Ph.D. in Classics at the University of Virginia) spent much of their last year at the University of Oklahoma compiling bibliographical data to add to our <a href="http://catalog.digitallatin.org/">catalog</a>. Specifically, they tracked down a large number of items from Wilhelm Engelmann's <em>Bibliotheca Scriptorum Classicorum</em> , volume 2: Scriptores Latini (Leipzig 1882). That work still needs to be edited and imported into the catalog's database, but I'm hoping to do that after I upgrade our sites to the new version of Drupal and migrate all of the data.</p>
+<p>That's all for now! I will try my best not to let so much time elapse between now and the next update.</p>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="footerwrapper">
+  <footer class="container mt-auto">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-4 pb-4">
+          <h3>Navigation</h3>
+          <ul class="list-group"><li class="list-group-item py-1">
+              <a
+                href="/dll-org/"
+                
+              >
+                HOME
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/about/"
+                
+              >
+                ABOUT
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/blog/"
+                
+              >
+                BLOG
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/research/"
+                
+              >
+                RESEARCH
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/videos/"
+                
+              >
+                VIDEOS
+              </a>
+            </li></ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Social</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Contact</h3>
+          <address>
+            Digital Latin Library<br />
+            The University of Oklahoma<br />
+            650 Parrington Oval<br />
+            CARN 116<br />
+            Norman, OK 73019<br />
+            <br />
+            <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
+          </address>
+          <p class="copyright">© Copyright 2023 Digital Latin Library</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script type="text/javascript" src="/dll-org/dist/app.js"></script>
+  </body>
+</html>

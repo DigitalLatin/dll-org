@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Latin Library - Setting up Atom for Editing Texts for the Digital Latin Library</title>
+
+    <link rel="stylesheet" href="/dll-org/dist/app.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+
+    
+
+
+<meta name="description" content="The main site for the Digital Latin Library">
+
+
+<meta property="og:site_name" content="Digital Latin Library">
+<meta property="og:title" content="Digital Latin Library">
+<meta property="og:description" content="The main site for the Digital Latin Library">
+<meta property="og:url" content="https://digitallatin.github.io/dll-org/blog/setting-atom-editing-texts-digital-latin-library.html">
+<meta property="og:locale" content="">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Setting up Atom for Editing Texts for the Digital Latin Library">
+<meta name="twitter:description" content="The main site for the Digital Latin Library">
+
+
+
+
+<link rel="icon" href="/dll-org/assets/favicons/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 homepage">
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+
+    <div class="bg-primary" id="nav-wrapper">
+  <div class="container">
+    <header class="pb-1 mb-2">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="/dll-org/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img
+              src="/assets/images/DLL_logo_web_medium_horizontal_ko.png"
+              alt="Digital Latin Library Logo"
+              width="375"
+              height="75"
+              class="img-fluid logo-toggle-spacing"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse pt-3" id="navbarNav">
+
+
+
+
+
+<ul class="navbar-nav ms-auto"><li class="nav-item">
+            <a class="nav-link"
+                href="/dll-org/"
+                >
+                Home
+            </a></li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+                href="/dll-org/about/"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="dropdown-692841">
+                About <span class="visually-hidden">Toggle Dropdown About</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-692841">
+                <li>
+                    <a class="dropdown-item" href="/dll-org/about/"><!-- About-->Overview</a>
+                </li><li>
+    <a class="dropdown-item" href=" /dll-org/about/mission-and-goals.html">
+    Mission and Goals
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/about/people.html">
+    People
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/about/project-history.html">
+    Project History
+    </a>
+</li></ul></li><li class="nav-item">
+            <a class="nav-link active"
+                href="/dll-org/blog/"
+                >
+                Blog
+            </a></li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+                href="/dll-org/research/"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="dropdown-888654">
+                Research <span class="visually-hidden">Toggle Dropdown Research</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-888654">
+                <li>
+                    <a class="dropdown-item" href="/dll-org/research/"><!-- Research-->Overview</a>
+                </li><li>
+    <a class="dropdown-item" href=" /dll-org/research/catalog.html">
+    Catalog
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/data-visualization.html">
+    Visualization
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/digital-philology.html">
+    Philology
+    </a>
+</li><li>
+    <a class="dropdown-item" href=" /dll-org/research/library-of-digital-latin-texts.html">
+    LDLT
+    </a>
+</li></ul></li><li class="nav-item">
+            <a class="nav-link"
+                href="/dll-org/videos/"
+                >
+                Videos
+            </a></li></ul>
+
+
+</div>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>
+
+    <div class="background-image"></div>
+    <div class="flex-grow-1">
+      <main id="main">
+        <div class="container my-2 py-4 bg-white" id="content">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <h1>Setting up Atom for Editing Texts for the Digital Latin Library</h1>
+              <p class="border-top border-dark" id="byline">
+                <em>By Andrew Dunning | April 11, 2018</em>
+              </p>
+              
+              <img src="/assets/images/background.jpg" class="featured-image-post" />
+              
+              <p><em>Note: The developers of Atom archived the project on December 15, 2022. It is no longer under active development.</em></p>
+<p>The Digital Latin Library is opening the doors to publishing your critical editions. The <a href="https://classicalstudies.org/publications-and-research/ldlt-scs-guidelines">Society for Classical Studies</a> and <a href="http://www.medievalacademy.org/page/LDLTSubmissions/MAA-Procedures-for-Evaluation-of-Proposals--Submissions-to-the-Library.htm">Mediaeval Academy of America</a> have published their submission process, and one from the Renaissance Society of America is coming soon. For the first time, scholars will be able to publish peer-reviewed editions of primary sources that are universally accessible to both researchers and the general public, including readers with print disabilities.</p>
+<h3>Technology-independent editions</h3>
+<p>All three series contributing to the Digital Latin Library will work with files encoded using the tagging format of the <a href="http://tei-c.org/">Text Encoding Initiative</a> (TEI). TEI is based on XML, which will have a familiar appearance if you have ever worked on a webpage. It works exactly like the HTML tags that underlie every website.</p>
+<p>The Digital Latin Library has <a href="https://digitallatin.github.io/guidelines/">guidelines for its variant of TEI</a>, allowing you to create files ready for publication. If you've already started on an edition, the DLL team are at work on <a href="https://github.com/DigitalLatin/automation">software to help convert files in other formats</a>, but the final submission will be a TEI XML file. It's not a perfect format, but it's the best thing we have for precisely representing the kinds of things that scholars care about when editing texts. As someone who has published editions using nearly every program available (including Classical Text Editor, LaTeX, and plain Microsoft Word), allow me to ensure you that this is by far the most efficient and sustainable way of going about it so far.</p>
+<p>Editing a file with TEI is much more precise than using a word processor. When you're writing a file in a program such as Microsoft Word or LibreOffice, it forces to you look at your work in visual terms, whereas in editing we need to think about the text's semantic meaning. For instance, when you put text in italics, that doesn't tell us whether it's a foreign word, a title, or a biblical quotation. TEI lets us note these things precisely, which makes it easier to work as a team across different fields, and allows us to create editions that are technology-independent – that work equally well online, in print, or using accessibility devices.</p>
+<h3>Software for working with TEI</h3>
+<p>The tradeoff of using TEI is that, because it doesn't work in the same way as people tend to write on computers, we can't use an everyday work processor. That software is turning what you are writing into a coded XML file: what you see is a visual representation of markup for computers. There isn't yet software that allows you work visually with TEI XML files, for the simple reason that we don't yet have a critical mass of people who want this. Instead, we're working directly with the XML tags. If you haven't worked this way before, it might feel like stepping back into the 1980s, but it's highly efficient once you learn the system. You're working with the same software as programmers use, which requires a similar precision as textual editing.</p>
+<p>You can edit XML in any plain text editor. This is a program that allows you to work with the exact characters being sent to a computer, instead of a visual abstraction. Life will be easier, however, if you use an editor that includes tools for working with XML. Many people in the TEI community use the <a href="https://www.oxygenxml.com">Oxygen XML Editor</a>, which has far more features for working with XML than you'll probably need. But some of us can't afford the biannual fees to licence a copy of Oxygen; or prefer an editor that is a bit simpler and can be used for other writing and programming tasks. If that is you, there are other options.</p>
+<p>There are many different text editors available; the best for working with TEI at the moment is <a href="https://atom.io">Atom</a>, a highly customizable and open-source program that works on Mac, Windows, and Linux systems. It has the key feature of a <a href="https://atom.io/packages/linter-autocomplete-jing">package that validates your XML files</a>, ensuring it conforms to the Digital Latin Library guidelines as you work, defined in computer terms by a 'schema'. (There are other editors that include a basic XML validator, but validating TEI requires a more complex schema language called Relax NG that most of them do not support.)</p>
+<p>Installing the editor itself is fairly simple, but for XML validation to work, you'll also need Java, which can be fussy to set up. These steps should give you a functional setup.</p>
+<h3>Installing Atom on a Mac with Homebrew</h3>
+<p>The quickest method of installing the software you'll need on a Mac is to use the Terminal, a program that gives you direct access to the Unix system at the heart of your computer. It might look daunting if you didn't use a computer before the 1990s, but it simply lets you run commands by typing words instead of clicking buttons. To open the Terminal, look for it in the 'Utilities' folder inside Applications.</p>
+<ol>
+<li>Install <a href="https://brew.sh">Homebrew</a> by going to its website and pasting the command it gives you into the Terminal. This is a program for adding Unix-based software to your Mac, many of which are handy for academic purposes.</li>
+<li>Paste the following lines into the Terminal (you can run each one individually, pressing Return after each line, or copy in the whole thing at once):</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">brew tap caskroom/cask
+brew cask <span class="token function">install</span> <span class="token function">java</span> atom
+apm <span class="token function">install</span> linter-autocomplete-jing</code></pre>
+<p>After the installers have run, you will find Atom in your Applications folder. When you open the editor, you might receive a message about needing to install extra dependencies, which you should do.</p>
+<h3>Installing Atom on Windows</h3>
+<p>To install Atom and the XML validation package on Windows:</p>
+<ol>
+<li>Download <a href="https://atom.io">Atom</a> and run the installer. For more detailed instructions, see <a href="https://flight-manual.atom.io/getting-started/sections/installing-atom/">Installing Atom</a>.</li>
+<li>Download <a href="https://java.com/download/">Java</a> and run the installer. If you see any offers to install extra, unrelated software, be sure to decline these.</li>
+<li>To install XML validation support: a) Open Atom. b) Type Control + Shift + P to open the Command Palette (which lets you run any Atom command, and you'll be using it frequently). c) Search for 'Install Packages and Themes' and select it. d) In the 'Install Packages' window, search for 'linter-autocomplete-jing' and click the Install button. If it asks to install extra dependencies, allow it to do so.</li>
+</ol>
+<h3>Get started with Atom</h3>
+<p>Because Atom is useful for working not just with XML but any plain-text file, it is used by millions of developers and writers. There is a large community around it, and many introductions to using it. You might be interested in a <a href="https://thesweetsetup.com/apps/best-text-editor-macos/">recent review of text editors</a> that introduces these programs and highlights some of Atom's key features. These allow you to work far more efficiently than in a standard word processor, even if the initial learning curve is steeper. There is an official <a href="https://flight-manual.atom.io/getting-started/sections/atom-basics/">Atom Basics</a> guide. <a href="https://www.learnenough.com/text-editor-tutorial"><em>Learn Enough Text Editor to Be Dangerous</em></a> is a slightly more advanced overview of how text editors work that focuses on Atom.</p>
+<p>The Atom community has also produced a vast array of packages that give the editor extra functionality. Many of them are directed towards programming, but some are also useful for using it for everyday writing. For example, <a href="https://teletype.atom.io">Teletype for Atom</a> allows multiple people to collaborate on a file over the Internet.</p>
+<p>Whether you're using Atom, Oxygen, or another text editor, you might like to start with the template on the <a href="https://digitallatin.github.io/guidelines/">Digital Latin Library Guidelines</a> website. <a href="http://books.openedition.org/oep/426"><em>What is the Text Encoding Initiative?</em></a> is a good general overview to TEI. The DLL guidelines are based on <a href="http://epidoc.sourceforge.net">EpiDoc</a>: you can also see more examples of how to transcribe Latin manuscripts and inscriptions on its website, and there are also other introductions to it available online.</p>
+<hr>
+<p>Editor's note: Neel Smith has suggested two other resources for working with Atom:</p>
+<ul>
+<li><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_neelsmith_atomic-2Dtei&amp;d=DwMF-g&amp;c=qKdtBuuu6dQK9MsRUVJ2DPXW6oayO8fu4TfEHS8sGNk&amp;r=dwWFSfIMgku8bpO7G3Q4fg&amp;m=3y1RuxWjj4U-6c_pOzvDUJUoSZOsMN4Ew5SlwPJTAeI&amp;s=27-_PC_Dc1T9Ws49uqc3J_vo8h6PSph4GqdaP03tOhA&amp;e=">https://github.com/neelsmith/atomic-tei</a> is a package that adds TEI validation (not just well-formed XML validation) using the TEI-all .rng schema.</li>
+<li><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__atom.io_packages_atom-2Dwrap-2Din-2Dtag&amp;d=DwMF-g&amp;c=qKdtBuuu6dQK9MsRUVJ2DPXW6oayO8fu4TfEHS8sGNk&amp;r=dwWFSfIMgku8bpO7G3Q4fg&amp;m=3y1RuxWjj4U-6c_pOzvDUJUoSZOsMN4Ew5SlwPJTAeI&amp;s=fodLim8KYrRjEetyMAztbIb7w6i92Elek7MJrYIvR7s&amp;e=">https://atom.io/packages/atom-wrap-in-tag</a> adds very nice shortcuts for wrappiong a selection in elements. (One former Oxygen user told me that this was the plugin that allowed him to switch to Atom.)</li>
+</ul>
+<p>Thanks, Neel!</p>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="footerwrapper">
+  <footer class="container mt-auto">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-4 pb-4">
+          <h3>Navigation</h3>
+          <ul class="list-group"><li class="list-group-item py-1">
+              <a
+                href="/dll-org/"
+                
+              >
+                HOME
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/about/"
+                
+              >
+                ABOUT
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/blog/"
+                
+              >
+                BLOG
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/research/"
+                
+              >
+                RESEARCH
+              </a>
+            </li><li class="list-group-item py-1">
+              <a
+                href="/dll-org/videos/"
+                
+              >
+                VIDEOS
+              </a>
+            </li></ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Social</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4">
+          <h3>Contact</h3>
+          <address>
+            Digital Latin Library<br />
+            The University of Oklahoma<br />
+            650 Parrington Oval<br />
+            CARN 116<br />
+            Norman, OK 73019<br />
+            <br />
+            <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
+          </address>
+          <p class="copyright">© Copyright 2023 Digital Latin Library</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script type="text/javascript" src="/dll-org/dist/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<div class="bg-primary" id="nav-wrapper">
+  <div class="container">
+    <header class="pb-1 mb-2">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="{{ '/' | url }}" class="d-flex align-items-center text-dark text-decoration-none">
+            <img
+              src="/assets/images/DLL_logo_web_medium_horizontal_ko.png"
+              alt="Digital Latin Library Logo"
+              width="375"
+              height="75"
+              class="img-fluid logo-toggle-spacing"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse pt-3" id="navbarNav">{% include "navigation.njk" %}</div>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>

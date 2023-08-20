@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: posts
+permalink: /tags/{{ tag }}/
+layout: base
+---
+
+{# From https://www.11ty.dev/docs/quicktips/tag-pages/ #} {% block content %}
+<h1>Posts tagged with “{{ tag }}”</h1>
+
+<ul class="pt-4">
+  {% set taglist = collections[ tag ] %} {% for post in taglist | reverse %}
+  <li class="pb-2">
+    <a href="{{ post.url }}">{{ post.data.title }}</a> | {{ post.data.date | readableDate }}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
+<hr />
+<a href="/blog">Back to the Blog home page</a>
