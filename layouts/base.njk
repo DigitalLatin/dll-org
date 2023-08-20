@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ site.title }} - {{ title or meta.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}" />
+    <link rel="stylesheet" href="/dist/app.css" />
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
 
     {% include "meta.njk" %}
@@ -33,6 +33,6 @@
       </main>
     </div>
     {% include "footer.njk" %}
-    <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
+    <script type="text/javascript" src="/dist/app.js"></script>
   </body>
 </html>
