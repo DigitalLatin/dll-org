@@ -89,7 +89,7 @@ eleventyNavigation:
       item.data.tags -%} {%- if count < 5 -%} {%- set count = count
                     + 1 -%}
                     <li class="pb-2">
-                      <a href="{{ item.url | url }}" class="link-light">{{ item.data.title }}</a>
+                      <a href="{{ item.url }}" class="link-light">{{ item.data.title }}</a>
                     </li>
                     {%- endif -%} {%- endif -%} {%- endif -%} {%- endfor -%}
                   </ul>
