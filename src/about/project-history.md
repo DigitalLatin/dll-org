@@ -68,6 +68,8 @@ As that deadline approached, it became clear that an extension would be necessar
 
 The implementation grant from the Andrew W. Mellon Foundation expired in July 2018, and the final report was submitted to AWMF ahead of the October deadline. All elements of the project are now operational on a server maintained by the director of the DLL project and hosted by the University of Oklahoma. The main site at [https://digitallatin.org](https://digitallatin.org/)/ provides general information about the DLL’s two main initiatives, each with its own subdomain: the DLL Catalog ([https://catalog.digitallatin.org](https://catalog.digitallatin.org/)/), and the Library of Digital Latin Texts (<https://ldlt.digitallatin.org/>).
 
+A list of DLL-related research activity is available on our [Research page](/research/index.html).
+
 ### The Library of Digital Latin Texts
 
 The Library of Digital Latin Texts is the series of born-digital critical editions of Latin texts published in partnership with the Society for Classical Studies, the Medieval Academy of America, and the Renaissance Society of America. As of this report, the following technical elements are in place:
@@ -91,15 +93,15 @@ The following policies and procedures are also in place:
 - Editor/author agreements between OU (on behalf of the DLL), the SCS, and individual editors/authors,
 - Editor/author agreements between OU (on behalf of the DLL), the MAA, and individual editors/authors.
 
-Current LDLT editions in the pipeline include:
+#### Current LDLT Editions
 
-#### SCS
+For the SCS:
 
 - _Serviani in Vergili Aeneidos libros IX–XII commentarii_ (Robert A. Kaster et al., in progress)
 - [_Bellum Alexandrinum_](https://ldlt.digitallatin.org/editions/bellum_alexandrinum/) (Cynthia Damon),
 - _P. Ovidii Nasonis Ibis_ (Tom Keeline, proposed),
 
-#### MAA
+For the MAA:
 
 - Miracula sancte Frideswide (Andrew Dunning, accepted by MAA; in progress),
 - [_Peter Gracilis, Commentary on the Sentences, Book I, Question 1_](https://github.com/Library-of-Digital-Latin-Texts/MAA-Petrus-Gracilis-Liber-I-Quaestio-I) (edited by Jeff Witt and John Slotemaker, published),
@@ -109,7 +111,7 @@ Current LDLT editions in the pipeline include:
 - Pietro d’Abano, _Expositio problematum Aristotelis, Particula XIX: De harmonia_ (edited by Caleb Mutch, in progress)
 - _Cartulary of Prémontré_ (edited by Heather Wacha and Yvonne Seale)
 
-#### RSA
+For the RSA:
 
 - Joseph Resch's _Iugurtha_ (edited by Elisa Viale and revised by Simon Withensohn and Stefan Zathammer, in progress)
 - _Nicolai episcopi Modrusiensis Oratio in funere reverendissimi domini d. Petri cardinalis Sancti Sixti_ (edited by Neven Jovanovic, in progress)

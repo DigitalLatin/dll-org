@@ -17,7 +17,7 @@ Reading an apparatus criticus is hard enough for a human to do; for a computer, 
 
 Critical editions in print _are_ heavily encoded, but in a way that only humans with special training and lots of experience can decode. Because publishers prefer not to sacrifice much real estate on a page to printing information that they think only some readers will use, textual scholars have developed a way of compressing the information into the allotted space using abbreviations and symbols. Call it a “print-optimized visualization of textual data.”
 
-The image above is an excerpt from the Harvard Servius. Consider all of the types of information that appear in the entries on a single page:
+The image in the header of this page is an excerpt from the so-called Harvard Servius. Consider all of the types of information that appear in the entries on a single page:
 
 ![](https://digitallatin.org/sites/default/files/servius_marked_up.png){.center-image}
 
@@ -39,13 +39,12 @@ This notion of “one format, many uses” is at the heart of XML, which is the 
 
 ## DLL Displays
 
-Of course, LDLT editions wouldn't be user-friendly if we didn't provide some way of viewing them, so the DLL offers three ways of interacting with LDLT texts.
+Of course, LDLT editions wouldn't be user-friendly if we didn't provide some way of viewing them, so the DLL offers four ways of interacting with LDLT texts.
 
-Since most users just want to see the text and any editorial annotations associated with it, the [LDLT reading room](https://ldlt.digitallatin.org) provides a clean view of the text with links to annotations about variant readings or other information the editor has deemed important.
-
-For users wishing to use an edition in a more traditional format, we provide a PDF version with all of the trappings of printed critical editions. This is one of the DLL's ongoing research projects. It involves customizing the TEI's XSLT Stylesheets to transform an edition's XML into [LaTeX](https://www.latex-project.org/). You can see an example of this project at [https://github.com/Library-of-Digital-Latin-Texts/balex/raw/main/ldlt-balex.pdf](https://github.com/Library-of-Digital-Latin-Texts/balex/raw/main/ldlt-balex.pdf).
-
-For users who want to delve into the data, the LDLT also has a [downloadable desktop application](https://digitallatin.org/sites/default/files/encodex-0.1-20180106.tar.xz) (warning: linked file is 44MB) with sophisticated tools for visual data analysis. Chris Weaver and his assistants have developed a number of sophisticated text visualization tools that will help users see critical editions in new ways—from pixel-based visualization of variants to storyboard visualizations of witness groupings. Users who want to view the data in some other way can download the raw XML files and work with them independently of the LDLT’s applications.
+1. Since most users just want to see the text and any editorial annotations associated with it, the [LDLT reading room](https://ldlt.digitallatin.org) provides a clean view of the text with links to annotations about variant readings or other information the editor has deemed important.
+2. For users wishing to view an edition in a more traditional format, we provide a PDF version with all of the trappings of printed critical editions. This is one of the DLL's ongoing research projects. It involves customizing the TEI's XSLT Stylesheets to transform an edition's XML into [LaTeX](https://www.latex-project.org/). You can see an example of this project at [https://github.com/Library-of-Digital-Latin-Texts/balex/raw/main/ldlt-balex.pdf](https://github.com/Library-of-Digital-Latin-Texts/balex/raw/main/ldlt-balex.pdf).
+3. For users who want to delve into the data, the LDLT also has a [downloadable desktop application](https://digitallatin.org/sites/default/files/encodex-0.1-20180106.tar.xz) (warning: linked file is 44MB) with sophisticated tools for visual data analysis. Chris Weaver and his assistants have developed a number of sophisticated text visualization tools that will help users see critical editions in new ways—from pixel-based visualization of variants to storyboard visualizations of witness groupings. Users who want to view the data in some other way can download the raw XML files and work with them independently of the LDLT’s applications.
+4. The XML for every edition, along with any other data an editor might wish to include (e.g., collation tables, images, transcriptions, etc.) is available in a publicly accessible Git repository on GitHub. Indeed, the repository is what the DLL publishes. All of the visualizations are just that: visualizations of the published data.
 
 The important thing to remember is that the presentation of that data is separate from the data itself. In other words, what matters is the scholarship that goes into making the edition authoritative and reliable, not the way it looks after it goes to a professional typesetter and publisher. That’s why we’re interested only in providing a clean version of the edition in the LDLT reading room. If someone else has a novel way of presenting the data, we’re happy for the data to be reused for that purpose, but it is not the mission of the LDLT to provide every presentation possible.
 

@@ -23,4 +23,10 @@ With the support of a planning grant from the [Andrew W. Mellon Foundation\'s Sc
 
 In 2014, Huskey teamed up with colleagues June Abbas, a professor in OU\'s [School of Library and Information Studies](https://www.ou.edu/cas/slis), and [Chris Weaver](https://www.ou.edu/coe/cs/people/weaver), an associate professor in OU\'s [School of Computer Science](https://www.ou.edu/coe/cs/), and applied for and received a second planning grant from the Mellon Foundation—this time to explore the possibilities for incorporating data visualization and analysis into the project and to conduct user studies according to the standards of library science. The success of that planning phase led to the award of a two-year implementation grant for 2015-2017, which was extended to 2018.
 
+Since the end of the funding period, the team has been engaged in:
+
+- publishing articles and presenting our work at conferences,
+- developing applications to automate some of the technical aspects of the project,
+- and maintaining and upgrading our technology.
+
 Read more about the project\'s [mission](/about/mission-and-goals.html) and [history](/about/project-history.html). [See a list of the research outcomes of this period of the DLL's history](/research/index.html).
