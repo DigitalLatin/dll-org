@@ -164,19 +164,17 @@ body.homepage {
 #footerwrapper a {
   color: white;
   text-decoration: none;
-  font-size: small;
 }
 
 #footerwrapper a:hover {
   color: #b95d00;
   text-decoration: none;
-  font-size: small;
 }
 
 #footerwrapper h3 {
   color: white;
   font-variant: small-caps;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 // Social Media Icons
@@ -194,9 +192,9 @@ body.homepage {
 }
 
 address {
-  font-size: small;
+  font-size: smaller;
 }
 .copyright {
-  font-size: small;
+  font-size: smaller;
   text-align: left;
 }

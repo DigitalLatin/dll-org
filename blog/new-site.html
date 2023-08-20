@@ -81,10 +81,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/about/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-923540">
+                id="dropdown-192195">
                 About <span class="visually-hidden">Toggle Dropdown About</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-923540">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-192195">
                 <li>
                     <a class="dropdown-item" href="/about/"><!-- About-->Overview</a>
                 </li><li>
@@ -108,15 +108,15 @@
             <a class="nav-link dropdown-toggle"
                 href="/research/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-986308">
+                id="dropdown-480644">
                 Research <span class="visually-hidden">Toggle Dropdown Research</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-986308">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-480644">
                 <li>
                     <a class="dropdown-item" href="/research/"><!-- Research-->Overview</a>
                 </li><li>
     <a class="dropdown-item" href=" /research/catalog.html">
-    Catalog
+    DLL Catalog
     </a>
 </li><li>
     <a class="dropdown-item" href=" /research/data-visualization.html">
@@ -158,10 +158,12 @@
               
               <img src="/assets/images/new-site.png" class="featured-image-post" />
               
-              <p>Visitors to this site will notice a lot of changes. For various reasons that <a href="/blog/technical-side.html">I discuss in greater detail elsewhere</a>, I have migrated this site from a dynamic content management system (Drupal 7) to a static site generator (<a href="https://www.11ty.dev/">Eleventy</a>).</p>
-<p>This move has greatly simplified site management tasks and content creation. I can compose and edit content in <a href="https://www.markdownguide.org/">Markdown</a>, a lightweight language that lets writers focus on writing without getting distracted by layout and design. I can test and develop the site locally on my computer instead of having to run a separate server, virtual machine, or container. For the front end of the site, I selected a starter template based on Bootstrap 5, which means that I didn't have to put a lot of effort into making the site viewable on screens of different sizes. I'm not much of a front-end designer, but I did put some thought into the look of this new site: the background image is a page from a 15th-century manuscript of Lucan's <em>Bellum Civile</em>, and the color palette is adapted from it. As for deployment, I can just incorporate that step into my existing Git workflow, since I can host this site directly from its repository on Github. That means that I have one less site to manage on the DLL's server. It also means that I will be able to post updates on this project more frequently.</p>
-<p>A less noticeable change has occurred at the site for the <em>Library of Digital Latin Texts</em> (<a href="https://ldlt.digitallatin.org/">https://ldlt.digitallatin.org/</a>). That site, too, has been migrated from a dynamic CMS (<a href="https://www.django-cms.org/en/">Django</a>) to a static site generator (<a href="https://jekyllrb.com/">Jekyll</a>). Most of the credit for that migration goes to Hugh Cayless. He and I hope that it will make maintenance and upkeep of that site much simpler.</p>
-<p>Unfortunately, the <a href="https://catalog.digitallatin.org/">DLL Catalog site</a> has more complex technical requirements than the other two sites. It is currently running on Drupal 7, which will soon reach its end of life. All of the data have been migrated successfully to Drupal 9, but the site's theme layer (i.e., the way it looks) must be rebuilt entirely because Drupal 9 uses an entirely new front-end framework (<a href="https://twig.symfony.com/">Twig</a>). Fortunately, Twig is similar to <a href="https://shopify.github.io/liquid/">Liquid</a> and <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a>, the template languages for Jekyll and Eleventy. I hope to work on that project during the summer of 2024. In the meantime, all work on the DLL Catalog has been paused. Depending on the viability of Drupal 7 during this time of transition, the site might have to be locked down or taken offline entirely, but its data will be made available in JSON-LD and CSV form in a publicly accessible Git repository.</p>
+              <p>Visitors to this site will notice a lot of changes. For various reasons that <a href="/blog/technical-side.html">I discuss in greater detail elsewhere</a>, I have migrated this site from a dynamic content management system (<a href="https://drupal.org/">Drupal</a>) to a static site generator (<a href="https://www.11ty.dev/">Eleventy</a>).</p>
+<p>This move has greatly simplified site management tasks and content creation. I can compose and edit content in <a href="https://www.markdownguide.org/">Markdown</a>, a lightweight language that lets writers focus on writing without getting distracted by layout and design. I can test and develop the site locally on my computer instead of having to run a separate server, virtual machine, or container. For the front end of the site, I selected a <a href="https://mandrasch.github.io/11ty-plain-bootstrap5/">starter template</a> based on <a href="https://getbootstrap.com/">Bootstrap</a>, which means that I didn't have to put a lot of effort into making the site responsive to screens of different sizes.</p>
+<p>I'm not much of a front-end designer, but I did put some thought into the look of this new site: the background image is a <a href="/assets/images/background.jpg">page from a 15th-century manuscript of Lucan's <em>Bellum Civile</em></a>, and the <a href="https://www.canva.com/colors/color-wheel/">color palette</a> is adapted from it.</p>
+<p>As for deployment, I can just incorporate that step into my existing <a href="https://git-scm.com/">Git</a> workflow, since I can <a href="https://pages.github.com/">host this site directly from its repository on Github</a>. That means that I have one less site to manage on the DLL's server. It also means that I will be able to post updates on this project more frequently.</p>
+<p>A less noticeable change has occurred at the site for the <em>Library of Digital Latin Texts</em> (<a href="https://ldlt.digitallatin.org/">https://ldlt.digitallatin.org/</a>). That site, too, has been migrated from a dynamic CMS (<a href="https://www.django-cms.org/en/">Django</a>) to a static site generator (<a href="https://jekyllrb.com/">Jekyll</a>). Most of the credit for that migration goes to <a href="https://www.linkedin.com/in/hugh-cayless-a0b5682/">Hugh Cayless</a>. He and I hope that it will make maintenance and upkeep of that site much simpler.</p>
+<p>Unfortunately, the <a href="https://catalog.digitallatin.org/">DLL Catalog site</a> has more complex technical requirements than the other two sites. It is currently running on Drupal 7, which will soon reach its end of life. I have successfully migrated the data to Drupal 9, but the theme layer (i.e., the way it looks) must be rebuilt entirely because Drupal 9 uses an entirely new front-end framework (<a href="https://twig.symfony.com/">Twig</a>). Fortunately, Twig is similar to <a href="https://shopify.github.io/liquid/">Liquid</a> and <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a>, the template languages for Jekyll and Eleventy. I hope to work on that project during the summer of 2024. In the meantime, all work on the DLL Catalog has been paused. Depending on the viability of Drupal 7 during this time of transition, the site might have to be locked down or taken offline entirely, but its data will be made available in JSON-LD and CSV form in a publicly accessible Git repository.</p>
 <p>If you are interested in collaborating on (and/or funding?) the development of the next generation of the DLL Catalog, please send a message to me at <a href="mailto:huskey@ou.edu">huskey@ou.edu</a>.</p>
 
             </div>
