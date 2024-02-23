@@ -17,6 +17,8 @@ Anyone with access to a networked computer and some knowledge of Latin can publi
 
 Although editorial practices differ among scholars working on classical, medieval, and humanist texts, our user studies have demonstrated that there is general agreement that a viable digital format specifically for critical editions and commentaries of Latin texts, combined with a legitimate forum in which to publish them, would advance the field of Latin studies.
 
-Accordingly, the mission of the DLL's _Library of Digital Latin Texts_ is to provide standards, practices, and policies for creating, publishing, and working with born-digital critical editions of Latin texts from all eras.
+Accordingly, the mission of the DLL's _Library of Digital Latin Texts_ (LDLT) is to provide standards, practices, and policies for creating, publishing, and working with born-digital critical editions of Latin texts from all eras.
 
-For more information about the _LDLT_ and to see examples of our online reading room, please visit <https://ldlt.digitallatin.org/>.
+The DLL works with three learned societies—the Society for Classical Studies, the Medieval Academy of America, and the Renaissance Society of America—to offer a pathway for peer review and publication of LDLT editions.
+
+For more information about the _LDLT_ and to see view the currently available editions in our online reading room, please visit <https://ldlt.digitallatin.org/>.
