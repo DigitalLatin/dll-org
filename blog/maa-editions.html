@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Cataloging Works in the Packard Humanities Institute&#39;s Classical Latin Texts" />
+    <meta name="twitter:title" content="MAA Editions" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="" />
 
-    <meta property="og:title" content="Cataloging Works in the Packard Humanities Institute&#39;s Classical Latin Texts" />
+    <meta property="og:title" content="MAA Editions" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
     <meta property="og:type" content="article" />
-    <title>Digital Latin Library - Cataloging Works in the Packard Humanities Institute&#39;s Classical Latin Texts</title>
+    <title>Digital Latin Library - MAA Editions</title>
 
     <link rel="stylesheet" href="/dist/app.css" />
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
@@ -38,12 +38,12 @@
 <meta property="og:site_name" content="Digital Latin Library">
 <meta property="og:title" content="Digital Latin Library">
 <meta property="og:description" content="The main site for the Digital Latin Library">
-<meta property="og:url" content="https://digital.org/dll-org/blog/cataloging-works-packard-humanities-institutes-classical-latin-texts.html">
+<meta property="og:url" content="https://digital.org/dll-org/blog/maa-editions.html">
 <meta property="og:locale" content="">
 
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cataloging Works in the Packard Humanities Institute&#39;s Classical Latin Texts">
+<meta name="twitter:title" content="MAA Editions">
 <meta name="twitter:description" content="The main site for the Digital Latin Library">
 
 
@@ -102,10 +102,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/about/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-63973">
+                id="dropdown-745842">
                 About <span class="visually-hidden">Toggle Dropdown About</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-63973">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-745842">
                 <li>
                     <a class="dropdown-item" href="/about/"><!-- About-->Overview</a>
                 </li><li>
@@ -129,10 +129,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/research/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-686334">
+                id="dropdown-171843">
                 Research <span class="visually-hidden">Toggle Dropdown Research</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-686334">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-171843">
                 <li>
                     <a class="dropdown-item" href="/research/"><!-- Research-->Overview</a>
                 </li><li>
@@ -172,24 +172,26 @@
         <div class="container my-2 py-4 bg-white" id="content">
           <div class="row">
             <div class="col-md-10 mx-auto">
-              <h1>Cataloging Works in the Packard Humanities Institute&#39;s Classical Latin Texts</h1>
+              <h1>MAA Editions</h1>
               <p class="border-top border-dark" id="byline">
-                <em>By Samuel J. Huskey | October 19, 2015</em>
+                <em>By Samuel J. Huskey | February 23, 2024</em>
               </p>
               
-              <img src="/assets/images/background.jpg" class="featured-image-post" />
+              <img src="/assets/images/scta.png" class="featured-image-post" />
               
-              <p>In a previous post, I wrote about using BeautifulSoup library with Python to collect data for the DLL's catalog. In this post, I'll discuss using the same techniques to create a structured list of information about all of the authors and works on the <a href="http://latin.packhum.org/">Packard Humanities Institute's Classical Latin Texts web site (PHI)</a>.</p>
-<p>The site helpfully provides their canon of authors at <a href="http://latin.packhum.org/canon">http://latin.packhum.org/canon</a>. The structure of the list is as follows:</p>
-<pre class="language-bash"><code class="language-bash">Author name <span class="token punctuation">[</span>PHI author number, author abbreviation<span class="token punctuation">]</span>
-Work title, bibliography <span class="token keyword">for</span> reference edition <span class="token punctuation">[</span>PHI author number,work number, work abbreviation<span class="token punctuation">]</span></code></pre>
-<p>For example, here is the entry for Vergil:</p>
-<pre class="language-bash"><code class="language-bash">Publius Vergilius Maro <span class="token punctuation">{</span>0690 Verg<span class="token punctuation">}</span>
-    Eclogae P. Vergili Maronis Opera, ed. R. A. B. Mynors, <span class="token number">1972</span> <span class="token punctuation">{</span>0690 001 Ecl<span class="token punctuation">}</span>
-    Georgica P. Vergili Maronis Opera, ed. R. A. B. Mynors, <span class="token number">1972</span> <span class="token punctuation">{</span>0690 002 G<span class="token punctuation">}</span>
-    Aeneis P. Vergili Maronis Opera, ed. R. A. B. Mynors, <span class="token number">1972</span> <span class="token punctuation">{</span>0690 003 A<span class="token punctuation">}</span></code></pre>
-<p>One of the many excellent things about the Packard Humanities Institute's site is that each one of these pieces of information has an identifying attribute in the HTML code. For example, author names are in a <code>&lt;span&gt;</code> tag with a class of &quot;anam&quot;. Work titles are in a different <code>&lt;span&gt;</code> tag with a class of &quot;wnam&quot;. All of the works have <code>&lt;a&gt;</code> tags that link to the first page of the work on the PHI site. These tags and attributes are useful not just for the layout purposes of the PHI's site, but also for scraping the data and reusing it for other purposes, such as cataloging the works for the DLL.</p>
-<p>I wrote a program that will read the contents of <a href="http://latin.packhum.org/canon">http://latin.packhum.org/canon</a> and pull the author name, author number, work title, work number, PHI combined number, reference edition, and URL for each entry in the canon, then write the data to a comma-separated values (CSV) file that I can use to upload the information rapidly to our catalog. After that, we'll match the authors and works to our authority and works records so that the PHI's resources will appear in searches of the DLL's catalog. In keeping with our policy of sharing research objects, the code for this program is available at <a href="https://github.com/DigitalLatin/library-automation/blob/master/phi-works.py">https://github.com/DigitalLatin/library-automation/blob/master/phi-works.py</a>.</p>
+              <p>We're pleased to announce the publication of three editions in the <em>Library of Digital Latin Texts</em>(LDLT), in partnership with the <a href="https://www.medievalacademy.org/">Medieval Academy of America</a>.</p>
+<p>These editions are part of a larger project, the <a href="https://scta.info/">Scholastic Commentaries and Texts Archive</a>, under the direction of <a href="https://jeffreycwitt.com/">Jeffrey C. Witt</a>.</p>
+<p>The LDLT is a good option for scholars like Witt and his collaborators. First and foremost, <strong>peer review</strong> is the foundation of the LDLT's publishing pipeline. In this case, the MAA managed the peer review process; our two other partners, the Society for Classical Studies and the Renaissance Society of America, handle the peer review process for texts in their scholarly domains. Second, editors retain the copyright to their work, and they can freely use the texts in their own projects. Third, since the LDLT can publish texts of any length, it's a good choice for publishing all of a work or excerpts. Finally, the LDLT does not have the same concerns that drive commercial presses, so we can publish texts that might not otherwise have an outlet.</p>
+<p>Another benefit to publishing in the LDLT is that editions are published as version-controlled repositories of source files. This means that editions are not tightly bound to interfaces that can and do become obsolete as technology advances. We do provide some tools for rendering the code and viewing the editions online and in print, but we maintain a strict division between an edition's code and its visualization.</p>
+<p>Since the editions by Witt et al. are part of the <a href="https://scta.info/">Scholastic Commentaries and Texts Archive</a>, which has its own interfaces and viewing environment, we're providing links to the texts as they appear there.</p>
+<p>Click the &quot;HTML&quot; link to see the editions rendered in your web browser. Click the &quot;Code Repository&quot; link for access to the published source files.</p>
+<ul>
+<li>Peter Gracilis' <em>Commentarius in Libros Sententiarum Liber 1, Lectiones 1-20</em> (Jeffrey C. Witt and John T. Slotemaker). <a href="https://scta.lombardpress.org/text?resourceid=http://scta.info/resource/graciliscommentary">HTML at the Scholatic Commentaries and Texts Archive</a><br>
+| <a href="https://github.com/Library-of-Digital-Latin-Texts/MAA-Petrus-Gracilis-Liber-I-Quaestio-I">Code Respository</a></li>
+<li>Peter Gracilis, <em>Liber I, Quaestio 1</em> (Jeffrey C. Witt and John T. Slotemaker). <a href="https://scta.lombardpress.org/text?resourceid=http://scta.info/resource/pg-b1q1">HTML at the Scholatic Commentaries and Texts Archive</a> | <a href="https://github.com/Library-of-Digital-Latin-Texts/MAA-Petrus-Gracilis-Liber-I-Quaestio-I">Code Repository</a></li>
+<li>William of Hedon's <em>Tractatus de anima distinctio</em> 3, chapter 6 (Jeffrey C. Witt). <a href="https://scta.lombardpress.org/text?resourceid=http://scta.info/resource/da-3-d3c6">HTML at the Scholatic Commentaries and Texts Archive</a> | <a href="https://github.com/Library-of-Digital-Latin-Texts/maa-hedon-d3c6-reviewed-repo">Code Repository</a></li>
+</ul>
+<p>If you're curious about the DLL's own tools for viewing LDLT editions, you can go to <a href="https://github.com/Library-of-Digital-Latin-Texts/balex?tab=readme-ov-file#viewing">https://github.com/Library-of-Digital-Latin-Texts/balex?tab=readme-ov-file#viewing</a> to see options for viewing a sample edition in our own browser-based environment or as a PDF.</p>
 
             </div>
           </div>
