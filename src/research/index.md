@@ -27,7 +27,7 @@ Here is a listing of the DLL's research outcomes so far:
 1. Samuel J. Huskey, Hugh A. Cayless, & Andrew Dunning. 2020, March 5. DigitalLatin/guidelines: Version 1.3.0 (Version v1.3.0). Zenodo. <http://doi.org/10.5281/zenodo.3698122>.
 2. Katy Felkner and Samuel J. Huskey. 2019. "Automation Scripts for the Digital Latin Library: First Release." Zenodo. [http://doi:10.5281/zenodo.2658751](http://doi:10.5281/zenodo.2658751){.uri}.
 
-## MA Theses
+## MS Theses
 
 1. Asokarajan, Bharathi. 2016. “A Pixel-Based Focus+Context Technique for Visualizing Variation in Classical Text,” University of Oklahoma. https://shareok.org/handle/11244/34669.
 2. Silvia, Shejuti. 2016. “VariantFlow: Interactive Storyline Visualization Using Force Directed Layout,” University of Oklahoma. https://shareok.org/handle/11244/44937.
