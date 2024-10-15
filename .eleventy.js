@@ -19,7 +19,7 @@ const globalSiteData = {
   title: "Digital Latin Library",
   description: "The main site for the Digital Latin Library",
   locale: "en",
-  baseUrl: baseUrl,
+  baseUrl: "https://digitallatin.org/",
   pathPrefix: pathPrefix,
   lang: "en",
   home: "https://digitallatin.org/",
