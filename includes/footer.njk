@@ -8,7 +8,7 @@
             {%- for item in collections.all | eleventyNavigation -%}
             <li class="list-group-item py-1">
               <a
-                href="{% if isCurrent %}#main{% else %}{{ item.url | url }}{% endif %}"
+                href="{% if isCurrent %}#main{% else %}{{ item.url }}{% endif %}"
                 {%
                 if
                 isCurrent
