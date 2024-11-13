@@ -8,6 +8,7 @@ tags: Articles
 aliases:
   - /blog/library-digital-latin-texts-ldlt
   - /library-digital-latin-texts-ldlt
+  - /library-digital-latin-texts
 ---
 
 Within the next year, the Digital Latin Library, in partnership with the Society for Classical Studies, the Medieval Academy of America, and the Renaissance Society of America, will launch _The Library of Digital Latin Texts_ (LDLT), a series of digital critical editions of Latin texts from all eras. The DLL will provide the encoding guidelines, infrastructure, and platform for publishing these texts, and the learned societies will be responsible for receiving submissions, reviewing them, and deciding whether or not to publish them. Policies and procedures for this endeavor are still in development, but it seems worthwhile in the meantime to explain what we mean by “digital edition” so that prospective editors can begin preparing submissions.
