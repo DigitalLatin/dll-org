@@ -102,10 +102,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/about/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-197853">
+                id="dropdown-60556">
                 About <span class="visually-hidden">Toggle Dropdown About</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-197853">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-60556">
                 <li>
                     <a class="dropdown-item" href="/about/"><!-- About-->Overview</a>
                 </li><li>
@@ -129,10 +129,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/research/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-328089">
+                id="dropdown-257407">
                 Research <span class="visually-hidden">Toggle Dropdown Research</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-328089">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-257407">
                 <li>
                     <a class="dropdown-item" href="/research/"><!-- Research-->Overview</a>
                 </li><li>
