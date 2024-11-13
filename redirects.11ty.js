@@ -6,7 +6,7 @@ class Redirects {
         size: 1,
         alias: "redirect",
       },
-      layout: "layouts/redirects.njk",
+      layout: "redirects.njk",
       eleventyComputed: {
         permalink: ({ redirect }) => `${redirect.from}/index.html`,
       },
