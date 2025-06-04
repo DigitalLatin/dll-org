@@ -102,10 +102,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/about/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-677981">
+                id="dropdown-901067">
                 About <span class="visually-hidden">Toggle Dropdown About</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-677981">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-901067">
                 <li>
                     <a class="dropdown-item" href="/about/"><!-- About-->Overview</a>
                 </li><li>
@@ -129,10 +129,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/research/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-476272">
+                id="dropdown-424250">
                 Research <span class="visually-hidden">Toggle Dropdown Research</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-476272">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-424250">
                 <li>
                     <a class="dropdown-item" href="/research/"><!-- Research-->Overview</a>
                 </li><li>
@@ -271,7 +271,6 @@ apm <span class="token function">install</span> linter-autocomplete-jing</code><
           <h3>Social</h3>
           <ul class="list-unstyled">
             <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
-            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
             <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
           </ul>
         </div>
@@ -286,7 +285,13 @@ apm <span class="token function">install</span> linter-autocomplete-jing</code><
             <br />
             <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
           </address>
-          <p class="copyright">© Copyright 2024 Digital Latin Library</p>
+          <p class="copyright">
+            © <span id="copyright-year"></span> Digital Latin Library
+          </p>
+          <script>
+            // Set the current year in the copyright
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+          </script>
         </div>
       </div>
     </div>

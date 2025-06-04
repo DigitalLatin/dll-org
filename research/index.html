@@ -93,10 +93,10 @@
             <a class="nav-link dropdown-toggle"
                 href="/about/"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-426390">
+                id="dropdown-898036">
                 About <span class="visually-hidden">Toggle Dropdown About</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-426390">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-898036">
                 <li>
                     <a class="dropdown-item" href="/about/"><!-- About-->Overview</a>
                 </li><li>
@@ -120,10 +120,10 @@
             <a class="nav-link active dropdown-toggle"
                 href="#main"
                 aria-current="page"   role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                id="dropdown-720247">
+                id="dropdown-46366">
                 Research <span class="visually-hidden">Toggle Dropdown Research</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown-720247">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-46366">
                 <li>
                     <a class="dropdown-item" href="#main"><!-- Research-->Overview</a>
                 </li><li>
@@ -295,7 +295,6 @@
           <h3>Social</h3>
           <ul class="list-unstyled">
             <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
-            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
             <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
           </ul>
         </div>
@@ -310,7 +309,13 @@
             <br />
             <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
           </address>
-          <p class="copyright">© Copyright 2024 Digital Latin Library</p>
+          <p class="copyright">
+            © <span id="copyright-year"></span> Digital Latin Library
+          </p>
+          <script>
+            // Set the current year in the copyright
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+          </script>
         </div>
       </div>
     </div>
