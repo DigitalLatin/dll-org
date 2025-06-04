@@ -27,7 +27,6 @@
           <h3>Social</h3>
           <ul class="list-unstyled">
             <li><a href="https://www.facebook.com/digitallatin" class="fa fa-facebook"></a></li>
-            <li><a href="https://twitter.com/digitallatin" class="fa fa-twitter"></a></li>
             <li><a href="https://www.youtube.com/@DigitalLatinLibrary" class="fa fa-youtube"></a></li>
           </ul>
         </div>
@@ -42,7 +41,13 @@
             <br />
             <a href="mailto:info@digitallatin.org">info@digitallatin.org</a>
           </address>
-          <p class="copyright">© Copyright {{ "" | currentYear }} Digital Latin Library</p>
+          <p class="copyright">
+            © <span id="copyright-year"></span> Digital Latin Library
+          </p>
+          <script>
+            // Set the current year in the copyright
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+          </script>
         </div>
       </div>
     </div>
