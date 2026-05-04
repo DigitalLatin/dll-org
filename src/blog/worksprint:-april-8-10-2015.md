@@ -2,7 +2,7 @@
 layout: blog
 title: "Worksprint: April 8–10, 2015"
 author: Samuel Huskey
-permalink: /blog/worksprint-april-8-10-2015
+permalink: /blog/worksprint-april-8-10-2015.html
 date: 2015-04-08
 tags: Events
 aliases:
