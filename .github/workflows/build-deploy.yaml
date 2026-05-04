@@ -1,59 +1,38 @@
 name: Build and Deploy
+
 on:
   push:
     branches:
       - main
-    # Sustainability: Don't trigger build for updated README
     paths-ignore:
       - "**/README.md"
-    # Allows you to run this workflow manually from the Actions tab.
-    workflow_dispatch:
+  workflow_dispatch:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-      - name: Use Node LTS
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16" # lts
 
-      # This build runs with path prefix for github pages (hosted on subdirectory),
-      # for example https://<USER>.github.io/<REPO-NAME>/
-      # See: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
-      - name: Install and Build for Github Pages 🔧
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install and Build for GitHub Pages
         run: |
-          npm install
+          npm ci
           npm run build
-          # npm run build -- --pathprefix="${{ github.event.repository.name }}"
-          # The above doesn't work anymore? :-/
-          # also doesn't work with eleventy-img https://github.com/11ty/eleventy/issues/1641
-          # We set pathprefix again via Node env, see below
         env:
           ELEVENTY_ENV: production
-          BASE_URL: "https://digital.org/"
+          BASE_URL: "https://digitallatin.org/"
           PATH_PREFIX: "/${{ github.event.repository.name }}/"
-      - name: Deploy to Github Pages 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: _site #the static site folder
-
-
-      # If you need more privacy / no tracking,
-      # sync your site to your own webspace
-      # https://github.com/marketplace/actions/ftp-deploy
-
-      # Build again if you need another path prefix
-      # - name: Install and Build for FTP 🔧
-      #   run: |
-      #    npm install
-      #    npm run build
-
-      #- name: 📂 Sync files
-      #  uses: SamKirkland/FTP-Deploy-Action@4.1.0
-      #  with:
-      #    server: ftp.samkirkland.com
-      #    username: myFtpUserName
-      #    password: ${{ secrets.ftp_password }}
+          folder: _site
