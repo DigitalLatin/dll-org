@@ -78,6 +78,10 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setServerOptions({
+  host: "0.0.0.0",
+  port: 8080
+});
   // Set Markdown library
   eleventyConfig.setLibrary("md", markdownLib);
 
@@ -107,9 +111,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("dist/"); // path is relative from root
 
   // Copy (static) files to output (_site)
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({
+    "src/assets": "assets"
+  });
 
-  eleventyConfig.addPassthroughCopy("src");
+  // eleventyConfig.addPassthroughCopy("src");
 
   eleventyConfig.setBrowserSyncConfig({
     // Enable serving files from the 'dist' directory
