@@ -1,4 +1,5 @@
 /node_modules
+node_modules/
 # eleventy output directory
 /_site
 # laravel mix output directory
