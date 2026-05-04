@@ -2,6 +2,7 @@
 node_modules/
 # eleventy output directory
 /_site
+_site/
 # laravel mix output directory
 /dist
 /mix-manifest.json
