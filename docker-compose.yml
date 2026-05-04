@@ -1,0 +1,17 @@
+services:
+  eleventy:
+    build: .
+    container_name: dll-org-eleventy
+    working_dir: /app
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    environment:
+      BASE_URL: "http://localhost:8080"
+      PATH_PREFIX: "/"
+    command: npm run dev
+
+volumes:
+  node_modules:
