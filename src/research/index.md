@@ -36,6 +36,7 @@ Here is a listing of the DLL's research outcomes so far:
 
 ## Articles
 
+1. Huskey, S. J. “The Digital Latin Library.” _Umanistica Digitale_, no. 23 (May 2026): 13–21. <https://doi.org/10.60923/issn.2532-8816/23501>. PDF available at <https://umanisticadigitale.unibo.it/article/view/23501/21245>.
 1. Almas, B., H. Cayless, T. Clérice, V. Jolivet, P. M. Liuzzo, J.Robie, M. Romanello and I. Scott, 2023. "Distributed Text Services (DTS): A Community-Built API to Publish and Consume Text Collections as Linked Data," _Journal of the Text Encoding Initiative_. <https://doi.org/10.4000/jtei.4352>
 1. Huskey, S. J. 2022. "The Visual [Re]Presentation of Textual Data in Traditional and Digital Critical Editions." _magazén: International Journal for Digital and Public Humanities_ 3.1. <https://edizionicafoscari.unive.it/it/edizioni4/riviste/magazen/2022/1/the-visual-representation-of-textual-data-in-tradi/>
 1. Huskey, S. J. and Cayless, H. 2022. "The Digital Critical Apparatus: Thoughts from the Field." _The Classical Journal_ 117.3: 340–358.
